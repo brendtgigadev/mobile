@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+D:\school\sem5\3D\Mobile apps\.metadata\.plugins\org.eclipse.jdt.core
+2957986058.index
+3104388987.index
+2162304086.index

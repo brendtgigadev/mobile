@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    android:layout_gravity="center"
+	    android:orientation="horizontal" >
+		<ImageButton
+		    android:id="@+id/btnNew"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:src="@drawable/newd" />
+		<ImageButton
+		    android:id="@+id/btnPaint"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:src="@drawable/paintcolor" />
+		<ImageButton
+		    android:id="@+id/btnErase"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:src="@drawable/erase" />
+		<ImageButton
+		    android:id="@+id/btnShare"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:src="@drawable/facebook" />
+	</LinearLayout>
+    
+    
+    <mobile.brendt.drawfree.DrawingView
+	    android:id="@+id/drawing"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginBottom="3dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="3dp"
+	    android:layout_weight="1"
+	    android:background="#FFFFFFFF" />
+    
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    android:layout_gravity="center"
+	    android:orientation="horizontal" >
+		
+		<ImageButton
+		    android:id="@+id/btnBrown"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/brown"
+		    android:tag="#FF5E2605" />
+		
+		<ImageButton
+		    android:id="@+id/btnRed"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/red"
+		    android:tag="#FFFF0000" />
+		
+		<ImageButton
+		    android:id="@+id/btnYellow"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/yellow"
+		    android:tag="#FFFFFF00" />
+		
+		<ImageButton
+		    android:id="@+id/btnGreen"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/green"
+		    android:tag="#FF00FF00" />
+		
+		<ImageButton
+		    android:id="@+id/btnBlue"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/blue"
+		    android:tag="#FF0000FF" />
+		
+		<ImageButton
+		    android:id="@+id/btnBlack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:contentDescription="@string/start_new"
+		    android:onClick="colorPick"
+		    android:src="@drawable/black"
+		    android:tag="#FF000000" />
+	</LinearLayout>
+    
+</LinearLayout>

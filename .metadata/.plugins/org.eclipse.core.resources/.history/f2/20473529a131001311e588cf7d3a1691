@@ -1,0 +1,34 @@
+package mobile.brendt.helloyou;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+
+public class HelloYouActivity extends Activity {
+	private static final String DEBUGTAG = "HelloYouActivity"; 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hello_you);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.hello_you, menu);
+        return true;
+    }
+    
+    public void onClick(View view){ 
+    	 if(view.equals(myHelloButton)){ 
+	    	 Log.v(DEBUGTAG, "clicked HELLO"); 
+	    	 //Do something 
+    	 } 
+    } 
+    
+}

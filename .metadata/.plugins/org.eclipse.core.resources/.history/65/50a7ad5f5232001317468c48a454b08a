@@ -1,0 +1,42 @@
+package mobile.brendt.drawfree;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+
+/* TUTORIAL gevolgd: http://mobile.tutsplus.com/tutorials/android/android-sdk-create-a-drawing-app-touch-interaction/ */
+
+public class MainActivity extends Activity {
+	
+	private DrawingView drawView;
+	private ImageButton current_paint;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		drawView = (DrawingView)findViewById(R.id.drawing);
+		
+		
+		LinearLayout paint_bar = (LinearLayout)findViewById(R.id.paint_bar);
+		current_paint = (ImageButton)paint_bar.getChildAt(0);
+		current_paint.setImageDrawable(getResources().getDrawable(R.drawable.paint_pressed));
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	public void colorPick(View view){
+		
+	}
+	
+}
